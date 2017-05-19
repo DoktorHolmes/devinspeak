@@ -1,9 +1,51 @@
 #inputs {
-  margin: 0 auto;
-  width: 75%;
+  width: 90%;
+  height: 35%;
+  position: absolute;
+  top: calc(50% - 35%/2);
+  left: calc(50% - 90%/2);
 }
 
 #inputs > input {
-  width: 500px;
-  height: 300px;
+  width: calc(50% - 100px);
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  resize: none;
+}
+
+#inputs > input:nth-child(2) {
+  right: 0px;
+}
+
+#inputs > input:nth-child(1) {
+  left: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  color: black;
+}
+
+#buttons {
+  width: 150px;
+  height: 150px;
+  top: calc(50% - 150px/2);
+  left: calc(50% - 150px/2);
+  position: absolute;
+}
+
+#buttons > button {
+  height: 45%;
+  width: 100%;
+  position: absolute;
+}
+#buttons > button:nth-child(1) {
+  top: 0px;
+}
+
+#buttons > button:nth-child(2) {
+  bottom: 0px;
 }
