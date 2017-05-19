@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Devinspeak</title>
+  </head>
+  <body>
+    <input style="width:500; height:300; top: 300; left:200" id="EncodeBox">
+    <input style="width:500; height:300; top: 300; left:800" id="DecodeBox">
+    <script>
+    var encodeEquiv={
+    }
+    function decode(){
+      
+    }
+    
