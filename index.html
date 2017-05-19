@@ -76,7 +76,7 @@
         output = output + decodeLang[decodeArray[i]];
         console.log(output);
       }
-      decodeBox.value = output;
+      encodeBox.value = output;
     }
     function encode(){
       var stringToDecode = decodeBox.value;
@@ -86,7 +86,7 @@
         output = output + encodeLang[decodeArray[i]];
         console.log(output);
       }
-      encodeBox.value = output;
+      decodeBox.value = output;
     }
     encodeButton.onclick = encode
     decodeButton.onclick = decode
