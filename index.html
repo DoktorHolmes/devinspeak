@@ -29,7 +29,7 @@
         "n": "m",
         "o": "p",
         "p": "q",
-        "q": "p",
+        "q": "w",
         "r": "t",
         "s": "d",
         "t": "y",
@@ -39,6 +39,32 @@
         "x": "c",
         "y": "u",
         "z": "x",
+        "A": "S",
+        "B": "N",
+        "C": "V",
+        "D": "F",
+        "E": "R",
+        "F": "G",
+        "G": "H",
+        "H": "J",
+        "I": "O",
+        "J": "K",
+        "K": "L",
+        "L": "A",
+        "M": "Z",
+        "N": "M",
+        "O": "P",
+        "P": "Q",
+        "Q": "W",
+        "R": "T",
+        "S": "D",
+        "T": "Y",
+        "U": "I",
+        "V": "B",
+        "W": "E",
+        "X": "C",
+        "Y": "U",
+        "Z": "X",
         " ": " "
     };
     var decodeLang={
@@ -53,7 +79,7 @@
       "i": "u",
       "j": "h",
       "k": "j",
-      "l": "k",
+      "l": "u",
       "m": "n",
       "n": "b",
       "o": "i",
@@ -68,11 +94,36 @@
       "x": "z",
       "y": "t",
       "z": "m",
+      "A": "L",
+      "B": "V",
+      "C": "X",
+      "D": "S",
+      "E": "W",
+      "F": "D",
+      "G": "F",
+      "H": "G",
+      "I": "U",
+      "J": "H",
+      "K": "J",
+      "L": "U",
+      "M": "N",
+      "N": "B",
+      "O": "I",
+      "P": "O",
+      "Q": "P",
+      "R": "E",
+      "S": "A",
+      "T": "R",
+      "U": "Y",
+      "V": "C",
+      "W": "Q",
+      "X": "Z",
+      "Y": "T",
+      "Z": "M",
       " ": " "
     };
     function decode(){
       var stringToDecode = decodeBox.value;
-      stringToDecode = stringToDecode.toLowerCase();
       var decodeArray = stringToDecode.split("");
       var output = "";
       output = "";
@@ -86,7 +137,6 @@
     }
     function encode(){
       var stringToDecode = encodeBox.value;
-      stringToDecode = stringToDecode.toLowerCase();
       var decodeArray = stringToDecode.split("");
       var output = "";
       output = "";
