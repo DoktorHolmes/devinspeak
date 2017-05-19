@@ -6,7 +6,7 @@
   left: calc(50% - 90%/2);
 }
 
-#inputs > input {
+#inputs > textarea {
   width: calc(50% - 100px);
   height: 100%;
   top: 0px;
@@ -14,11 +14,11 @@
   resize: none;
 }
 
-#inputs > input:nth-child(2) {
+#inputs > textarea:nth-child(2) {
   right: 0px;
 }
 
-#inputs > input:nth-child(1) {
+#inputs > textarea:nth-child(1) {
   left: 0px;
 }
 
