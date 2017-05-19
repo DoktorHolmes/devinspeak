@@ -1,40 +1,23 @@
 <html>
   <head>
     <title>Devinspeak</title>
-    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
     <input style="width:500; height:300; top: 300; left:200" id="EncodeBox">
     <input style="width:500; height:300; top: 300; left:800" id="DecodeBox">
+    <button id="EncodeButton">Encode</button>
+    <button id="DecodeButton">Decode</button>
     <script>
+    var encodeBox = document.getElementById("EncodeBox");
+    var encodeButton = document.getElementById("EncodeButton");
+    var decodeBox = document.getElementById("DecodeBox");
+    var decodeButton = document.getElementById("DecodeButton");
     var encodeLang={
       a: "s",
       b: "n",
       c: "v",
-      d: "f",
-      e: "r",
-      f: "g",
-      g: "h",
-      h: "j",
-      i: "o",
-      j: "k",
-      k: "l",
-      l: "a",
-      m: "z",
-      n: "m",
-      o: "p",
-      p: "q",
-      q: "r",
-      r: "t",
-      s: "d",
-      t: "y",
-      u: "i",
-      v: "b",
-      w: "e",
-      x: "c",
-      y: "u",
-      z: "x"
-    }
+      d: "f"
+    };
     var decodeLang={
       a: "l",
       b: "v",
@@ -62,7 +45,26 @@
       x: "z",
       y: "t",
       z: "m"
-    }
+    };
     function decode(){
-
+      var stringToDecode = encodeBox.value;
+      var decodeArray = stringToDecode.split("");
+      var output = "";
+      for (i = 0; i < decodeArray.length; i++){
+        output = output + decodeLang[decodeArray[i]];
+        console.log(output);
+      }
+      decodeBox.value = output;
     }
+    function encode(){
+      var stringToDecode = decodeBox.value;
+      var decodeArray = stringToDecode.split("");
+      var output = "";
+      for (i = 0; i < decodeArray.length; i++){
+        output = output + encodeLang[decodeArray[i]];
+        console.log(output);
+      }
+      encodeBox.value = output;
+    }
+    encodeButton.onclick = encode
+    decodeButton.onclick = decode
