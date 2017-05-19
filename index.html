@@ -70,6 +70,7 @@
     };
     function decode(){
       var stringToDecode = encodeBox.value;
+      stringToDecode = stringToDecode.toLowerCase();
       var decodeArray = stringToDecode.split("");
       var output = "";
       for (i = 0; i < decodeArray.length; i++){
@@ -80,10 +81,11 @@
     }
     function encode(){
       var stringToDecode = decodeBox.value;
+      stringToDecode = stringToDecode.toLowerCase();
       var decodeArray = stringToDecode.split("");
       var output = "";
       for (i = 0; i < decodeArray.length; i++){
-        output = output + encodeLang[decodeArray[i]];
+        output = output + encodeLang[encodeArray[i]];
         console.log(output);
       }
       decodeBox.value = output;
