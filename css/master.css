@@ -1,4 +1,9 @@
 #inputs {
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
+}
+
+#inputs > input {
+  width: 500px;
+  height: 300px;
 }
