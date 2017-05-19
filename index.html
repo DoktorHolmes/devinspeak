@@ -12,11 +12,11 @@
       <button id="DecodeButton">Decode</button>
     </div>
     <script>
-    var encodeBox = document.getElementById("EncodeBox");
-    var encodeButton = document.getElementById("EncodeButton");
-    var decodeBox = document.getElementById("DecodeBox");
-    var decodeButton = document.getElementById("DecodeButton");
-    var encodeLang={
+    var encodeBox = document.getElementById("EncodeBox"),
+    encodeButton = document.getElementById("EncodeButton"),
+    decodeBox = document.getElementById("DecodeBox"),
+    decodeButton = document.getElementById("DecodeButton"),
+    encodeLang={
         "a": "s",
         "b": "n",
         "c": "v",
@@ -113,8 +113,7 @@
         "¥": "•",
         "•": "_",
         " ": " "
-    };
-    var decodeLang={
+    }, decodeLang={
       "a": "l",
       "b": "v",
       "c": "x",
@@ -213,7 +212,7 @@
       "\\": "_",
       "_": "•",
       " ": " "
-      
+
     };
     function decode(){
       var stringToDecode = decodeBox.value;
