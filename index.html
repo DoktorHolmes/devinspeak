@@ -88,8 +88,12 @@
       }
       decodeBox.value = output;
     }
-    encodeButton.onclick = encode
-    decodeButton.onclick = decode
+    encodeButton.onclick = function(){
+      encode();
+    }
+    decodeButton.onclick = function(){
+      decode();
+    }
     </script>
   </body>
 </html>
