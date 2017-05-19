@@ -75,8 +75,10 @@
       var output = "";
       output = "";
       for (i = 0; i < decodeArray.length; i++){
-        output = output + decodeLang[decodeArray[i]];
-        console.log(output);
+        if(decodeLang[decodeArray[i]]){
+          output = output + decodeLang[decodeArray[i]];
+          console.log(output);
+        }
       }
       encodeBox.value = output;
     }
@@ -87,8 +89,10 @@
       var output = "";
       output = "";
       for (i = 0; i < decodeArray.length; i++){
-        output = output + encodeLang[decodeArray[i]];
-        console.log(output);
+        if(encodeLang[decodeArray[i]]){
+          output = output + encodeLang[decodeArray[i]];
+          console.log(output);
+        }
       }
       decodeBox.value = output;
     }
