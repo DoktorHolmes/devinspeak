@@ -69,7 +69,7 @@
       "z": "m"
     };
     function decode(){
-      var stringToDecode = encodeBox.value;
+      var stringToDecode = decodeBox.value;
       stringToDecode = stringToDecode.toLowerCase();
       var decodeArray = stringToDecode.split("");
       var output = "";
@@ -83,7 +83,7 @@
       encodeBox.value = output;
     }
     function encode(){
-      var stringToDecode = decodeBox.value;
+      var stringToDecode = encodeBox.value;
       stringToDecode = stringToDecode.toLowerCase();
       var decodeArray = stringToDecode.split("");
       var output = "";
