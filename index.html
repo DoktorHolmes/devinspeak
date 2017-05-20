@@ -216,7 +216,7 @@
 
     };
     function decode(){
-      var stringToDecode = decodeBox.textContent;
+      var stringToDecode = decodeBox.value;
       var decodeArray = stringToDecode.split("");
       var output = "";
       output = "";
@@ -226,10 +226,10 @@
           console.log(output);
         }
       }
-      encodeBox.textContent = output;
+      encodeBox.value = output;
     }
     function encode(){
-      var stringToDecode = encodeBox.textContent;
+      var stringToDecode = encodeBox.value;
       var decodeArray = stringToDecode.split("");
       var output = "";
       output = "";
@@ -239,7 +239,7 @@
           console.log(output);
         }
       }
-      decodeBox.textContent = output;
+      decodeBox.value = output;
     }
     encodeButton.onclick = function(){
       encode();
