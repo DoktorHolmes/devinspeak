@@ -5,8 +5,8 @@
   </head>
   <body>
     <div id="inputs">
-      <input id="encodeBox">
-      <input id="decodeBox">
+      <textarea id="encodeBox"></textarea>
+      <textarea id="decodeBox"></textarea>
     </div>
     <div id="buttons">
       <button id="encodeButton">Encode</button>
@@ -216,7 +216,7 @@
 
     };
     function decode(){
-      var stringToDecode = decodeBox.value;
+      var stringToDecode = decodeBox.textContent;
       var decodeArray = stringToDecode.split("");
       var output = "";
       output = "";
@@ -226,10 +226,10 @@
           console.log(output);
         }
       }
-      encodeBox.value = output;
+      encodeBox.textContent = output;
     }
     function encode(){
-      var stringToDecode = encodeBox.value;
+      var stringToDecode = encodeBox.textContent;
       var decodeArray = stringToDecode.split("");
       var output = "";
       output = "";
@@ -239,7 +239,7 @@
           console.log(output);
         }
       }
-      decodeBox.value = output;
+      decodeBox.textContent = output;
     }
     encodeButton.onclick = function(){
       encode();
